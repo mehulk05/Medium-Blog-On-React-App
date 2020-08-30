@@ -22,14 +22,13 @@ export class SingleBlog extends Component {
     Axios.get(this.mediumURL)
 
       .then((data) => {
-        // console.log(data.data)
+   
         const avatar = data.data.feed.image;
         const profileLink = data.data.feed.link;
-        const res = data.data.items; //This is an array with the content. No feed, no info about author etc..
+        const res = data.data.items; 
         const posts = res.filter((item) => item.categories.length > 0);
         for (let i in posts) {
           const title = "/" + posts[i].title;
-        
           if (title === this.state.titleid) {
             let post = posts[i];
             
