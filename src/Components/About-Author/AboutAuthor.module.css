@@ -1,0 +1,22 @@
+.meidum>li {
+    display: list-item;
+    margin-bottom: 2px;
+    list-style-type: disc;
+    list-style: disc;
+}
+
+.meidum>li>a {
+    color: #007bff;
+    padding-left: 0;
+}
+
+.meidum {
+    list-style: disc;
+}
+
+.meidum>li:hover,
+.meidum>li>a:hover {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #fff;
+}

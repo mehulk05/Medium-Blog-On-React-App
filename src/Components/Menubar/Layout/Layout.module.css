@@ -1,0 +1,8 @@
+.Content {
+    margin-top: 72px;
+}
+
+.nopadd {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
