@@ -4,12 +4,12 @@ import c from "./SingleBlog.module.css";
 import Spinner from "../Spinner/Spinner";
 
 export class SingleBlog extends Component {
+ 
   constructor(props) {
     super(props);
-
     this.state = {
       singlePost: {},
-      titleid: "",
+      titleid: props.location.pathname,
       avatar: "",
       profileLink: "",
       error:null,
@@ -29,6 +29,7 @@ export class SingleBlog extends Component {
         const posts = res.filter((item) => item.categories.length > 0);
         for (let i in posts) {
           const title = "/" + posts[i].title;
+        
           if (title === this.state.titleid) {
             let post = posts[i];
             
@@ -91,7 +92,7 @@ export class SingleBlog extends Component {
         </>
       );
     }
-    console.log(this.state.titleid, this.state);
+    
     return (
       <div className={`container ${c.center}`}>
        {post}
