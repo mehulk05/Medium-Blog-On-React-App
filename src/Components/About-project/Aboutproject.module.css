@@ -1,0 +1,58 @@
+.center {
+    margin: 0 auto;
+    float: none;
+    width: 750px !important;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.avatar {
+    width: 50%;
+    float: left;
+    margin-top: 25px
+}
+
+.avatar a {
+    float: left;
+    width: auto;
+}
+
+.avatar a:nth-child(2) {
+    float: none;
+}
+
+.avatar a p {
+    margin-top: 10px
+}
+
+.avatar p {
+    float: none;
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 100%;
+    clear: both;
+    margin-top: 145px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content h3:nth-child(1) {
+    font-size: 12px
+}
+
+figcaption {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+pre {
+    background-color: #eee;
+}

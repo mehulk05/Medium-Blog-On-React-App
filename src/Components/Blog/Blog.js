@@ -16,8 +16,8 @@ export class Blog extends Component {
         profileurl: "",
       },
       item: [],
-      isloading:true,
-      error:null
+      isloading: true,
+      error: null
     };
   }
   mediumURL =
@@ -31,10 +31,10 @@ export class Blog extends Component {
         const avatar = data.data.feed.image;
         const profileLink = data.data.feed.link;
         const res = data.data.items; //This is an array with the content. No feed, no info about author etc..
-         const posts = res.filter(item => item.categories.length > 0);
+        const posts = res.filter(item => item.categories.length > 0);
 
         const title = data.data.feed.title;
-        
+
         this.setState(
           (pre) => ({
             profile: {
@@ -42,10 +42,10 @@ export class Blog extends Component {
               ptitle: title,
               profileurl: profileLink,
               avtar: avatar,
-            
+
             },
             item: posts,
-            isloading:false
+            isloading: false
           }),
           () => {
             console.log(this.state);
@@ -54,7 +54,7 @@ export class Blog extends Component {
         console.log(data, res);
       })
       .catch((e) => {
-        this.setState({error:e.toJSON()})
+        this.setState({ error: e.toJSON() })
         console.log(e);
       });
   }
@@ -62,16 +62,16 @@ export class Blog extends Component {
     console.log(this.state.error)
     let post
 
-    if(this.state.item){
+    if (this.state.item) {
       post = this.state.item.map((post, index) => (
         <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
       ))
     }
-    if(this.state.isloading){
-      post = <Spinner/>
+    if (this.state.isloading) {
+      post = <Spinner />
     }
-    if(this.state.error){
-   let   error = this.state.error.code ? this.state.error.code : this.state.error.name;
+    if (this.state.error) {
+      let error = this.state.error.code ? this.state.error.code : this.state.error.name;
       let errorMsg = this.state.error.message;
       post = (
         <>
@@ -82,14 +82,14 @@ export class Blog extends Component {
     }
     return (
       <div className="container">
-            <div className="row">
-            {/* {this.state.item.map((post, index) => (
+        <div className="row">
+          {/* {this.state.item.map((post, index) => (
           <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
         ))} */}
 
-        {post}
-            </div>
-      
+          {post}
+        </div>
+
       </div>
     );
   }

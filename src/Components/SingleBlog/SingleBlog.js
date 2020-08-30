@@ -9,7 +9,7 @@ export class SingleBlog extends Component {
 
     this.state = {
       singlePost: {},
-      titleid: props.match.url,
+      titleid: "",
       avatar: "",
       profileLink: "",
       error:null,
