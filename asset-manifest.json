@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Medium-Blog-On-React-App/static/css/main.6275ee43.chunk.css",
-    "main.js": "/Medium-Blog-On-React-App/static/js/main.5448a7a9.chunk.js",
-    "main.js.map": "/Medium-Blog-On-React-App/static/js/main.5448a7a9.chunk.js.map",
+    "main.js": "/Medium-Blog-On-React-App/static/js/main.2b70bb18.chunk.js",
+    "main.js.map": "/Medium-Blog-On-React-App/static/js/main.2b70bb18.chunk.js.map",
     "runtime-main.js": "/Medium-Blog-On-React-App/static/js/runtime-main.980a8f34.js",
     "runtime-main.js.map": "/Medium-Blog-On-React-App/static/js/runtime-main.980a8f34.js.map",
     "static/css/2.11829350.chunk.css": "/Medium-Blog-On-React-App/static/css/2.11829350.chunk.css",
     "static/js/2.80432f05.chunk.js": "/Medium-Blog-On-React-App/static/js/2.80432f05.chunk.js",
     "static/js/2.80432f05.chunk.js.map": "/Medium-Blog-On-React-App/static/js/2.80432f05.chunk.js.map",
     "index.html": "/Medium-Blog-On-React-App/index.html",
-    "precache-manifest.721ab0962885eb7549f7444887cfde48.js": "/Medium-Blog-On-React-App/precache-manifest.721ab0962885eb7549f7444887cfde48.js",
+    "precache-manifest.c2a2a7472c85a759a0b215f77a9fe21f.js": "/Medium-Blog-On-React-App/precache-manifest.c2a2a7472c85a759a0b215f77a9fe21f.js",
     "service-worker.js": "/Medium-Blog-On-React-App/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/Medium-Blog-On-React-App/static/css/2.11829350.chunk.css.map",
     "static/css/main.6275ee43.chunk.css.map": "/Medium-Blog-On-React-App/static/css/main.6275ee43.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.11829350.chunk.css",
     "static/js/2.80432f05.chunk.js",
     "static/css/main.6275ee43.chunk.css",
-    "static/js/main.5448a7a9.chunk.js"
+    "static/js/main.2b70bb18.chunk.js"
   ]
 }
