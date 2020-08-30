@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Medium-Blog-On-React-App/static/css/main.a0a0a130.chunk.css",
-    "main.js": "/Medium-Blog-On-React-App/static/js/main.7ee6f7f7.chunk.js",
-    "main.js.map": "/Medium-Blog-On-React-App/static/js/main.7ee6f7f7.chunk.js.map",
+    "main.css": "/Medium-Blog-On-React-App/static/css/main.6275ee43.chunk.css",
+    "main.js": "/Medium-Blog-On-React-App/static/js/main.690db87d.chunk.js",
+    "main.js.map": "/Medium-Blog-On-React-App/static/js/main.690db87d.chunk.js.map",
     "runtime-main.js": "/Medium-Blog-On-React-App/static/js/runtime-main.980a8f34.js",
     "runtime-main.js.map": "/Medium-Blog-On-React-App/static/js/runtime-main.980a8f34.js.map",
     "static/css/2.11829350.chunk.css": "/Medium-Blog-On-React-App/static/css/2.11829350.chunk.css",
-    "static/js/2.6c9fd795.chunk.js": "/Medium-Blog-On-React-App/static/js/2.6c9fd795.chunk.js",
-    "static/js/2.6c9fd795.chunk.js.map": "/Medium-Blog-On-React-App/static/js/2.6c9fd795.chunk.js.map",
+    "static/js/2.adc5fef4.chunk.js": "/Medium-Blog-On-React-App/static/js/2.adc5fef4.chunk.js",
+    "static/js/2.adc5fef4.chunk.js.map": "/Medium-Blog-On-React-App/static/js/2.adc5fef4.chunk.js.map",
     "index.html": "/Medium-Blog-On-React-App/index.html",
-    "precache-manifest.aba3f460aacf500bb93a692d74b360f2.js": "/Medium-Blog-On-React-App/precache-manifest.aba3f460aacf500bb93a692d74b360f2.js",
+    "precache-manifest.1c6884378875878b0088981bad586f1f.js": "/Medium-Blog-On-React-App/precache-manifest.1c6884378875878b0088981bad586f1f.js",
     "service-worker.js": "/Medium-Blog-On-React-App/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/Medium-Blog-On-React-App/static/css/2.11829350.chunk.css.map",
-    "static/css/main.a0a0a130.chunk.css.map": "/Medium-Blog-On-React-App/static/css/main.a0a0a130.chunk.css.map",
-    "static/js/2.6c9fd795.chunk.js.LICENSE.txt": "/Medium-Blog-On-React-App/static/js/2.6c9fd795.chunk.js.LICENSE.txt"
+    "static/css/main.6275ee43.chunk.css.map": "/Medium-Blog-On-React-App/static/css/main.6275ee43.chunk.css.map",
+    "static/js/2.adc5fef4.chunk.js.LICENSE.txt": "/Medium-Blog-On-React-App/static/js/2.adc5fef4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.980a8f34.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.6c9fd795.chunk.js",
-    "static/css/main.a0a0a130.chunk.css",
-    "static/js/main.7ee6f7f7.chunk.js"
+    "static/js/2.adc5fef4.chunk.js",
+    "static/css/main.6275ee43.chunk.css",
+    "static/js/main.690db87d.chunk.js"
   ]
 }
