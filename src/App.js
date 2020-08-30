@@ -12,7 +12,7 @@ import Aboutproject from "./Components/About-project/Aboutproject";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={`Medium-Blogs-on-React#/`}>
+      <BrowserRouter basename={`Medium-Blog-On-React-App#/`}>
         <Layout />
         <Switch>
           {/* <Route
@@ -21,13 +21,13 @@ function App() {
             component={Blog}
             // render={() => <Redirect to="//Medium-Blogs-on-React#" />}
           /> */}
-<Route exact path="/Medium-Blogs-on-React/" render={() => (<Redirect to="#/Home" />)} />
+<Route exact path="/Medium-Blog-On-React-App/" render={() => (<Redirect to="#/" />)} />
           <Route path="/about-author" exact component={Aboutauthor}></Route>
 
           <Route path="/about-project" exact component={Aboutproject}></Route>
           <Route path="/:id" exact component={SingleBlog}></Route>
           <Route path="/" exact component={Blog}></Route>
-          <Route exact path="/" render={() => <Redirect to="/Medium-Blogs-on-React#/" />} />
+          <Route exact path="/" render={() => <Redirect to="/Medium-Blog-On-React-App#/" />} />
         </Switch>
         <Footer />
       </BrowserRouter>
