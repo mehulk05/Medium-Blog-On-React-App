@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import ShowBlog from "../ShowBlog/ShowBlog";
+import Spinner from "../Spinner/Spinner";
 
 
 export class Blog extends Component {
@@ -15,6 +16,8 @@ export class Blog extends Component {
         profileurl: "",
       },
       item: [],
+      isloading:true,
+      error:null
     };
   }
   mediumURL =
@@ -42,6 +45,7 @@ export class Blog extends Component {
             
             },
             item: posts,
+            isloading:false
           }),
           () => {
             console.log(this.state);
@@ -50,16 +54,40 @@ export class Blog extends Component {
         console.log(data, res);
       })
       .catch((e) => {
+        this.setState({error:e.toJSON()})
         console.log(e);
       });
   }
   render() {
+    console.log(this.state.error)
+    let post
+
+    if(this.state.item){
+      post = this.state.item.map((post, index) => (
+        <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
+      ))
+    }
+    if(this.state.isloading){
+      post = <Spinner/>
+    }
+    if(this.state.error){
+   let   error = this.state.error.code ? this.state.error.code : this.state.error.name;
+      let errorMsg = this.state.error.message;
+      post = (
+        <>
+          <h2 className="red center1">{error}</h2>
+          <p className="errorMessage center1">{errorMsg}</p>
+        </>
+      );
+    }
     return (
       <div className="container">
             <div className="row">
-            {this.state.item.map((post, index) => (
+            {/* {this.state.item.map((post, index) => (
           <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
-        ))}
+        ))} */}
+
+        {post}
             </div>
       
       </div>

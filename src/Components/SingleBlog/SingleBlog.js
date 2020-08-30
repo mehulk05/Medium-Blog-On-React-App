@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import c from "./SingleBlog.module.css";
+import Spinner from "../Spinner/Spinner";
 
 export class SingleBlog extends Component {
   constructor(props) {
@@ -11,6 +12,8 @@ export class SingleBlog extends Component {
       titleid: props.match.url,
       avatar: "",
       profileLink: "",
+      error:null,
+      isloading:true
     };
   }
   mediumURL =
@@ -33,6 +36,7 @@ export class SingleBlog extends Component {
                 singlePost: post,
                 avatar: avatar,
                 profileLink: profileLink,
+                isloading:false
               }));
             
           }
@@ -40,15 +44,16 @@ export class SingleBlog extends Component {
         
       })
       .catch((e) => {
+        this.setState({error:e.toJSON()})
         console.log(e);
       });
   }
 
   render() {
-    console.log(this.state.titleid, this.state);
-    return (
-      <div className={`container ${c.center}`}>
-        <h2>{this.state.singlePost.title}</h2>
+    let post
+    if(this.state.singlePost){
+     post =( <>
+       <h2>{this.state.singlePost.title}</h2>
         <div className={c.avatar}>
           <a
             href={this.state.profileLink}
@@ -70,6 +75,26 @@ export class SingleBlog extends Component {
   
       <div className={c.content}  dangerouslySetInnerHTML={{ __html:this.state.singlePost.content}}>
           </div>
+      </>
+     )
+    }
+    if(this.state.isloading){
+      post = <Spinner/>
+    }
+    if(this.state.error){
+   let   error = this.state.error.code ? this.state.error.code : this.state.error.name;
+      let errorMsg = this.state.error.message;
+      post = (
+        <>
+          <h2 className="red center1">{error}</h2>
+          <p className="errorMessage center1">{errorMsg}</p>
+        </>
+      );
+    }
+    console.log(this.state.titleid, this.state);
+    return (
+      <div className={`container ${c.center}`}>
+       {post}
       </div>
     );
   }

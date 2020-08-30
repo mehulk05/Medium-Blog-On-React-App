@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './Spinner.module.css';
 
-const spinner = () => (
+const Spinner = () => (
     <div className={classes.center}>
     <div className={classes.Spinnerborder}></div>
     <h2>Loading ...</h2>
@@ -10,4 +10,4 @@ const spinner = () => (
     </div>
 );
 
-export default spinner;
+export default Spinner;
