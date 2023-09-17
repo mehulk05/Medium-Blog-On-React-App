@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37ffb574f7b48f9697dcdc7036c9945e",
+    "revision": "78e99bc4161fdd0c111ea2f4eea6bb18",
     "url": "/Medium-Blog-On-React-App/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Medium-Blog-On-React-App/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "0e00bf023d2f4835a939",
-    "url": "/Medium-Blog-On-React-App/static/css/main.6275ee43.chunk.css"
+    "revision": "66e70403ee99c4f1fd90",
+    "url": "/Medium-Blog-On-React-App/static/css/main.ced2995f.chunk.css"
   },
   {
     "revision": "f3476bc0c25034203031",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Medium-Blog-On-React-App/static/js/2.80432f05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0e00bf023d2f4835a939",
-    "url": "/Medium-Blog-On-React-App/static/js/main.2b70bb18.chunk.js"
+    "revision": "66e70403ee99c4f1fd90",
+    "url": "/Medium-Blog-On-React-App/static/js/main.1b622dca.chunk.js"
   },
   {
     "revision": "5d2b78a955f59a39e5e7",
