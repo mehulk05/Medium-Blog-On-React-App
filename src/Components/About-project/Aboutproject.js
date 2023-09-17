@@ -20,7 +20,7 @@ export class Aboutproject extends Component {
         }
     
         mediumURL =
-        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05";
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehul-kothari";
       componentDidMount() {
         Axios.get(this.mediumURL)
     
