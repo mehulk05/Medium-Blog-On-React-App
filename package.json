@@ -2,7 +2,6 @@
     "name": "react-blog-with-medium",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://mehulk05.github.io/Medium-Blog-On-React-App",
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
